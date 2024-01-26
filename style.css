@@ -1,0 +1,219 @@
+html {
+    background-color: var(--Light-blue-light-blue-100, #0f324c);
+}
+
+body {
+    min-height: 100vh;
+    background: var(--Light-blue-light-blue-100, #0f324c);
+    margin: 0 auto;
+}
+
+#tema {
+    background: var(--Light-blue-light-blue-100, #0f324c);
+    margin: 2% 4% 4% 4%;
+    width: 92%;
+}
+
+.titulo {
+    color: white;
+    font-size: 17px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#codificacion {
+    background: var(--Light-blue-light-blue-100, #204665ad);
+    border: 1px solid #000000;
+    margin: -3% 2% 0 3.5%;
+    border-radius: 30px;
+    width: 92%;
+    height: 18em;
+}
+
+#cadena {
+    background: var(--Dark-blue-dark-blue-300, #7070a4);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 10px;
+    font-style: normal;
+    height: 55%;
+    width: 90%;
+    margin: 3% 3% 3% 4%;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    resize: none;
+    margin-bottom: 3%;
+}
+
+#cadena::placeholder {
+    color: white;
+    text-align: center;
+    line-height: 150px;
+}
+
+#areaResultado::placeholder,
+#cadena::placeholder {
+    font-size: 1em;
+}
+
+[type="submit"] {
+    width: 20%;
+    font-size: 0.6em;
+    font-weight: bold;
+    font-style: oblique;
+    border-radius: 25px;
+    padding: 5px;
+    text-align: center;
+    color: var(--White, black);
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.botonCod {
+    background: var(--Dark-blue-dark-blue-300, #4b80c2);
+    border: 1px solid var(--Dark-blue-dark-blue-300, #000000);
+    margin-left: 9.5%;
+}
+
+.botonDec {
+    background: var(--Dark-blue-dark-blue-300, #dd442d);
+    border: 1px solid var(--Dark-blue-dark-blue-300, #000000);
+}
+
+.botonLimp {
+    border: 1px solid var(--Dark-blue-dark-blue-300, #000000);
+    background: var(--Dark-blue-dark-blue-300, #cbc168);
+}
+
+.botonCop {
+    background: var(--Dark-blue-dark-blue-300, #a23cb4);
+    border: 1px solid var(--Dark-blue-dark-blue-300, #000000);
+}
+
+#areaResultado {
+    border-style: solid;
+    border-color: #000000;
+    font-size: 11px;
+    margin: 1%;
+    width: 92%;
+    height: 15em;
+    text-align: center;
+    resize: none;
+    border-radius: 30px;
+    margin-left: 3%;
+}
+
+#areaResultado::placeholder {
+    text-align: center;
+    color: gray;
+    line-height: 160px;
+}
+
+footer {
+    background-color: #0f324c;
+    margin: 0 4% 0;
+    padding: 0.5%;
+    width: 92%;
+    height: 45px;
+    color: #fff;
+    text-align: center;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(234, 196, 192);
+    transition: 1s;
+}
+
+p {
+    margin: 5px;
+    font-weight: bold;
+}
+
+header {
+    height: 70px;
+}
+
+@media (max-width: 767px) {
+
+    #tema {
+        margin-top: 4%;
+    }
+
+    #codificacion {
+        width: 91.5%;
+        margin: 1.5% 1.5% 5% 4%;
+    }
+
+
+    #cadena::placeholder {
+        line-height: 145px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    #areaResultado {
+        padding: 20px;
+        width: 84%;
+        margin: 0 4% 5% 5%;
+        height: 18em;
+    }
+
+    #areaResultado::placeholder {
+        line-height: 190px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    #cadena {
+        padding: 20px;
+        max-width: 83.5%;
+        margin: 4% 4.7% 3% 4.2%;
+    }
+}
+
+@media (max-width: 492px) {
+
+    #tema {
+        margin-top: 5%;
+    }
+
+    #codificacion {
+        max-width: 94%;
+        margin: 1% 6% 3% 4%;
+    }
+
+    #cadena::placeholder {
+        line-height: 150px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    #areaResultado {
+        padding: 20px;
+        width: 81%;
+        max-height: 14em;
+        margin: 2% 4% 3% 4%;
+    }
+
+    #areaResultado::placeholder {
+        line-height: 150px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    #cadena {
+        padding: 20px;
+        max-width: 78%;
+        margin: 5% 4% 5% 5.5%;
+    }
+}
